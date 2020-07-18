@@ -4,11 +4,19 @@ import random
 def main():
     print('You rolled a die')
 
-    roll = random.randint(1, 6)
-    print(f'You rolled a {roll}')
+    dice_rolls = 2
+    dice_sum = 0
+
+    for i in range(0, dice_rolls):
+        roll = random.randint(1, 6)
+
+        dice_sum += roll
+        print(f'You rolled a {roll}')
+
+    print(f'You have rolled {dice_sum} times!')
 
     # You rolled a die
-  # You rolled a 6
+# You rolled a 6
 
 
 if __name__ == "__main__":
